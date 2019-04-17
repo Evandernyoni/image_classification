@@ -62,16 +62,16 @@ class SimpleDatasetLoader():
                 for pros in self.preprocessors:
                     image = pros.preprocess(image)
                 
-        # update the data list and labels list
-        data.append(image)
-        labels.append(label)
+            # update the data list and labels list
+            data.append(image)
+            labels.append(label)
         
-        # show an update every 'verbose' images
-        if verbose > 0 and i > and (i + 1) % verbose == 0:
-            print("[INFO] processed {}/{}".format(i+1, len(imagePaths)))
+            # show an update every 'verbose' images
+            if verbose > 0 and i > 0 and (i + 1) % verbose == 0:
+                print("[INFO] processed {}/{}".format(i+1, len(imagePaths)))
     
-    # return a tuple of the data and labels
-    return (np.array(data), np.array(labels))
+        # return a tuple of the data and labels
+        return (np.array(data), np.array(labels))
 
 
 

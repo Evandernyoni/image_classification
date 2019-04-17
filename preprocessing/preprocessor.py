@@ -4,7 +4,7 @@
 import cv2
 
 
-class SimpleProcessor():
+class SimplePreprocessor():
     """ This class handles image preprocessing by resizing the image, ignoring the aspect ratio.
     ....
 

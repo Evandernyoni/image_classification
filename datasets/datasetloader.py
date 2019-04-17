@@ -43,7 +43,10 @@ class SimpleDatasetLoader():
               list of image labels
         imagePaths: list
                    specifies the file paths to the images in the dataset
-              
+        Return
+        ------
+        a tuple of the data and labels
+        
         """ 
         data = []
         labels = []

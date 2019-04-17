@@ -1,4 +1,4 @@
-## image_classification
+## image_classification_with_knn
 
 1. Clone repository - git clone
 2. cd into repository

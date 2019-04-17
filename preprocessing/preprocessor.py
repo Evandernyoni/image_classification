@@ -5,8 +5,7 @@ import cv2
 
 
 class SimpleProcessor():
-    """ This class handles image preprocessing by resizing
-the image, ignoring the aspect ratio.
+    """ This class handles image preprocessing by resizing the image, ignoring the aspect ratio.
     ....
 
     Attributes
@@ -41,5 +40,10 @@ the image, ignoring the aspect ratio.
         ----------
         image: str
              image path
+
+        Return
+        ------
+        image: 
+             resized image
         """
         return cv2.resize(image, (self.width, self.height), interpolation=self.inter)

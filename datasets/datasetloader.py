@@ -6,7 +6,6 @@ import os
 
 class SimpleDatasetLoader():
     """ For loading and preprocessing data 
-    
     Attributes
     ----------
     preprocessors:
